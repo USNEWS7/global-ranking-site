@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Global Academic Ranking Index</title>
+<style>
+body {font-family: Arial; margin:0; background:#f4f6f9;}
+.header {background:#0a3161;color:white;padding:15px;font-size:22px;}
+.container {max-width:900px;margin:50px auto;text-align:center;}
+input {padding:12px;width:60%;}
+button {padding:12px;background:#c8102e;color:white;border:none;}
+</style>
+</head>
+<body>
+
+<div class="header">Global Academic Ranking Index</div>
+
+<div class="container">
+<h1>Search Global University Rankings</h1>
+
+<input id="searchInput" placeholder="Enter university name">
+<button onclick="goSearch()">Search</button>
+
+<p style="margin-top:30px;">
+View Full Rankings →
+</p >
+</div>
+
+<script>
+function goSearch(){
+  let v=document.getElementById("searchInput").value.toLowerCase();
+  if(v.includes("krirk")){
+    window.location.href="krirk.html";
+  } else {
+    alert("No data found");
+  }
+}
+</script>
+
+</body>
+</html>
